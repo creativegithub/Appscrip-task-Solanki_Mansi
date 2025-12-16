@@ -9,9 +9,12 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
-    unoptimized: false,
+    unoptimized: true,
     minimumCacheTTL: 60,
   },
+  output: "export",
+  trailingSlash: true,
+  distDir: "out",
 };
 
 export default nextConfig;
