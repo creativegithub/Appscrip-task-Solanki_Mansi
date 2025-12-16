@@ -1,0 +1,692 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 48px 16px 24px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.desktopOnly {
+  display: block;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.contactText {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.newsletter {
+  display: flex;
+  gap: 12px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #444;
+  background-color: #ffffff;
+  color: #888;
+  font-size: 13px;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.submitBtn {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.submitBtn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.currencyDropdown {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.currencySelect {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.currencySelect:hover {
+  opacity: 0.8;
+}
+
+.flagImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.bullet {
+  font-size: 13px;
+  color: #fff;
+  margin: 0 4px;
+}
+
+.currencyCode {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.chevronDown {
+  transition: transform 0.3s;
+}
+
+.chevronUp {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.currencyOptions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-top: 8px;
+  min-width: 200px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.currencyOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+  font-size: 13px;
+}
+
+.currencyOption:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.currencyOption.active {
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+}
+
+.countryName {
+  margin-left: auto;
+  font-size: 11px;
+  color: #888;
+}
+
+.currencyOption:hover .countryName {
+  color: #aaa;
+}
+
+.currencyNote {
+  font-size: 11px;
+  color: #888;
+  line-height: 1.5;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.middleSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 48px;
+}
+
+.brandName {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+.list a {
+  font-size: 13px;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+  line-height: 1.6;
+}
+
+.list a:hover {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.socialIcon:hover {
+  border-color: #fff;
+  opacity: 0.5;
+}
+
+.payments {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.paymentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 36px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 4px;
+}
+
+.paymentIcon svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.paymentIcon:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 12px;
+  color: #888;
+}
+
+.columnHeader {
+  display: none;
+}
+
+.list.hidden,
+.list.visible {
+  display: block;
+}
+
+.followUsContent.hidden,
+.followUsContent.visible {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .middleSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .currencyNote {
+    display: block;
+  }
+
+  .columnHeader {
+    display: none !important;
+  }
+
+  .list.hidden,
+  .list.visible {
+    display: block !important;
+  }
+
+  .followUsContent.hidden,
+  .followUsContent.visible {
+    display: block !important;
+  }
+
+  .paymentsSection {
+    display: none;
+  }
+
+  .topSection .divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 12px 20px;
+  }
+
+  .topSection,
+  .middleSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: block;
+  }
+
+  .contactText {
+    font-size: 12px;
+  }
+
+  .currencyNote {
+    display: none;
+  }
+
+  .columnHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 0;
+    width: 100%;
+    text-align: left;
+    font-size: inherit;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .columnHeader h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .columnHeader svg {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    color: #fff;
+  }
+
+  .columnHeader.expanded svg {
+    transform: rotate(180deg);
+  }
+
+  .list.hidden {
+    display: none;
+  }
+
+  .list.visible {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .followUsContent.hidden {
+    display: none;
+  }
+
+  .followUsContent.visible {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .column {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .column:last-child {
+    border-bottom: none;
+  }
+
+  .paymentsSection {
+    padding: 16px 0;
+    border-top: 1px solid #ffffff;
+  }
+
+  .paymentsSection .heading {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 24px 12px 16px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .topSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileToggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+
+  .toggleIcon {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .toggleIcon.expanded {
+    transform: rotate(180deg);
+  }
+
+  .heading {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+
+  .text {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: #ccc;
+  }
+
+  .contactText {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 6px;
+  }
+
+  .newsletter {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+  }
+
+  .input,
+  .submitBtn {
+    font-size: 11px;
+  }
+
+  .input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #444;
+  }
+
+  .submitBtn {
+    flex: 0 0 auto;
+    padding: 10px 16px;
+    white-space: nowrap;
+  }
+
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-direction: row;
+  }
+
+  .currencyDropdown {
+    margin-bottom: 12px;
+  }
+
+  .currencySelect {
+    font-size: 11px;
+  }
+
+  .currencyCode {
+    font-size: 11px;
+  }
+
+  .currencyNote {
+    font-size: 10px;
+    color: #888;
+    margin-top: 8px;
+  }
+
+  .divider {
+    height: 1px;
+    margin: 0 !important;
+    background-color: #ffffff;
+  }
+
+  .middleSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 20px 0;
+  }
+
+  .brandName {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list li {
+    margin-bottom: 8px;
+  }
+
+  .list a {
+    font-size: 11px;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    line-height: 1.5;
+  }
+
+  .list a:hover {
+    color: #fff;
+  }
+
+  .social {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s;
+    font-size: 14px;
+  }
+
+  .socialIcon:hover {
+    opacity: 0.5;
+  }
+
+  .payments {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .paymentIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 24px;
+    border: none;
+    border-radius: 3px;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .paymentIcon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .paymentIcon:hover {
+    opacity: 0.8;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 16px;
+    border-top: 1px solid #ffffff;
+    font-size: 10px;
+    color: #888;
+  }
+}
