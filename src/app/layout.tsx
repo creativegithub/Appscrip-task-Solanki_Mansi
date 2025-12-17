@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Appscrip Product Store | SSR Next.js Demo",
     description: "SEO optimized ecommerce demo using Next.js App Router with SSR",
     type: "website",
-    url: "https://appscrip-products.netlify.app",
+    url: "https://appscrip-task-product-management.netlify.app",
     siteName: "Appscrip Demo Store",
   },
   twitter: {
@@ -33,7 +33,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" href="/logo.png" type="image/svg+xml" />
-        <link rel="canonical" href="https://appscrip-products.netlify.app" />
+        <link rel="canonical" href="https://appscrip-task-product-management.netlify.app" />
         <script
           type="application/ld+json"
           suppressHydrationWarning
@@ -42,13 +42,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Store",
               name: "Appscrip Demo Store",
-              url: "https://appscrip-products.netlify.app",
+              url: "https://appscrip-task-product-management.netlify.app",
               description: "SEO optimized ecommerce demo using Next.js App Router with SSR",
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://appscrip-products.netlify.app?q={search_term_string}",
+                  urlTemplate: "https://appscrip-task-product-management.netlify.app?q={search_term_string}",
                 },
                 query_input: "required name=search_term_string",
               },
